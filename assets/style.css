@@ -1,0 +1,15 @@
+body {
+    align-content: center;
+    background-image: url(../assets/images/train.png);
+}
+.container-fluid {
+    align-content: center;
+    width: 75%;
+}
+
+.jumbotron {
+    opacity: 0.9;
+    align-content: center;
+    text-align: center;
+    border: 1px solid black;
+}
