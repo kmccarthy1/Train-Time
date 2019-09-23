@@ -1,15 +1,15 @@
 
-  var firebaseConfig = {
-    apiKey: "AIzaSyASc-HLDAP3_4nc4ZpSwgr-YYQYTSt-MT8",
-    authDomain: "fir-1-f21a4.firebaseapp.com",
-    databaseURL: "https://fir-1-f21a4.firebaseio.com",
-    projectId: "fir-1-f21a4",
-    storageBucket: "",
-    messagingSenderId: "119976707166",
-    appId: "1:119976707166:web:8bd9f630b29a4fbf94e0cf"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
+ var firebaseConfig = {
+  apiKey: "AIzaSyBAtwLdLN2_5wLIIbKE6yA4cxksUb3JQDY",
+  authDomain: "traintime-d6931.firebaseapp.com",
+  databaseURL: "https://traintime-d6931.firebaseio.com",
+  projectId: "traintime-d6931",
+  storageBucket: "",
+  messagingSenderId: "503452863591",
+  appId: "1:503452863591:web:88782129b613056d3ad8c2"
+};
+// Initialize Firebase
+firebase.initializeApp(firebaseConfig);
   
   var database = firebase.database();
   var currentTime = moment();
