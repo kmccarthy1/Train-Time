@@ -18,6 +18,7 @@ firebase.initializeApp(firebaseConfig);
     //variables to populate table
       var name = childSnap.val().name;
       var destination = childSnap.val().destination;
+      //is this fT neccessary??
       var firstTrain = childSnap.val().firstTrain;
       var frequency = childSnap.val().frequency;
       var min = childSnap.val().min;
