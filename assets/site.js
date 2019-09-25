@@ -30,7 +30,7 @@ firebase.initializeApp(firebaseConfig);
   
   database.ref().on("value", function(snapshot) {
    
-    //does this mean or do anything
+
 
   });
 
