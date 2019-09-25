@@ -24,7 +24,7 @@ firebase.initializeApp(firebaseConfig);
       var min = childSnap.val().min;
       var next = childSnap.val().next;
     
-      $("#trainTable > tbody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>"+ next + "</td><td>" + min + "</td><tr>")
+      $("#trainTable > tbody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>"+ next + "</td><td>" + min + "</td><tr>");
 
   });
   
