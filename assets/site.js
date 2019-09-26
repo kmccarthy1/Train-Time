@@ -18,15 +18,14 @@ firebase.initializeApp(firebaseConfig);
     //variables to populate table
       var name = childSnap.val().name;
       var destination = childSnap.val().destination;
-      //is this fT neccessary??
       var firstTrain = childSnap.val().firstTrain;
       var frequency = childSnap.val().frequency;
       var min = childSnap.val().min;
       var next = childSnap.val().next;
     
-      $("#trainTable > tbody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>"+ next + "</td><td>" + min + "</td><tr>");
-
-  });
+      $("#trainTable > tbody").append("<tr><td>" + name + "</td><td>" + destination + "</td><td>" + frequency + "</td><td>" + next + "</td><td>" + min + "</td></tr>");
+    });
+    
   
   database.ref().on("value", function(snapshot) {
    
@@ -58,7 +57,7 @@ if (frequency == "") {
     alert('Enter a frequency');
     return false;
 }
-    // THE MATH!
+
     //subtracts the first train time back a year to ensure it's before current time.
     var firstTrainConverted = moment(firstTrain, "hh:mm").subtract("1, years");
     // the time difference between current time and the first train
